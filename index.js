@@ -13,7 +13,7 @@ app.route("/name").get(function (req, res, next) {
 
   res.send({
     status: true,
-    message:,
+    message: "Success",
     results: [
       { firstName: "Josh", lastName: "Wich" },
       { firstName: "Josh", lastName: "Witch" },

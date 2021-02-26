@@ -4,6 +4,7 @@
   "description": "A web scrapper to find movie for Indonesian",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/danarputra/web_scrapper_movie_id#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.7"
   }
