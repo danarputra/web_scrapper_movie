@@ -1,0 +1,19 @@
+{
+  "name": "scrapper_movie",
+  "version": "1.0.0",
+  "description": "A web scrapper to find movie for Indonesian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danarputra/web_scrapper_movie_id.git"
+  },
+  "author": "Pradana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danarputra/web_scrapper_movie_id/issues"
+  },
+  "homepage": "https://github.com/danarputra/web_scrapper_movie_id#readme"
+}
