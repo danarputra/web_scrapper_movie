@@ -1,4 +1,4 @@
-const fetchData = require("./src/fetch_data");
+const data = require("./src/fetch_data");
 
 const express = require("express");
 const app = express();
@@ -9,10 +9,11 @@ app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: false }));
 
 // Route
-app.route("/temukan").get(function (req, res, next) {
+app.route("/temukan").get(async (req, res, next) => {
   res.status(200);
-  let data = fetchData.fetchData;
-  console.log(data);
+  let results = await data.getData("/discover/movie?region=ID&language=id");
+  // console.log(results.data['results']);
+  res.send(results.data["results"]);
   res.end();
 });
 

@@ -3,7 +3,7 @@ const key = require("./api_key");
 const url = require("./url");
 
 module.exports = {
-  getData: function get(params) {
+  getData: (params) => {
     return axios({
       method: "GET",
       url: url.baseUrl + params,
@@ -13,7 +13,7 @@ module.exports = {
       },
     });
   },
-  postData: function get(params, data) {
+  postData: (params, data) => {
     return axios({
       method: "POST",
       url: url.baseUrl + params,
