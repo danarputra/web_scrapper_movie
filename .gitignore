@@ -1,4 +1,4 @@
 /node_modules
 
 # hide api key
-/src/api_key.js
+# /src/api_key.js

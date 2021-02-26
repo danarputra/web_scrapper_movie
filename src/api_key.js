@@ -1,0 +1,4 @@
+module.exports = {
+  bearer_token:
+    "U2FsdGVkX196JmW+AqIZMZvUuI0bFxErNZScVvAOOEWb7IJqXpwuI97/62d0R/vgn1F+1KZXcpwvCoNjZa4Yg6MpIyZxvPJkTIwPfdgEEFJt2gKfht2b/h1UO5rqvlnCA//JSB/Y5P5NQIKiTlLO1FLz6x8NhaCpLogWOC7Uv2N6ZPEnxa9hmofTJvuMFhzQQl9/iv2C4kCblb+V4NzSBTccyCg316foHs+VAV2FAVuNjU5f2yE4voWh/O75SlwgsEUIru8CNzIy+9nr2MezLuIZtFf2GqgfUOs1/GSnZNCZAI2v/8z3y8hemKzReaJu",
+};
