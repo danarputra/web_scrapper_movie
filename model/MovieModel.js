@@ -23,7 +23,7 @@ class MovieModel {
 
   jsonToModel(map) {
     let jenis = [];
-    if (map["genre_ids"] != null) {      
+    if (map["genre_ids"] != null) {
       jenis.push(...map["genre_ids"]);
     }
     return new MovieModel(
@@ -32,7 +32,8 @@ class MovieModel {
       (this.judul = map["original_title"]),
       (this.deskripsi = map["overview"]),
       (this.popularitas = map["popularity"]),
-      (this.link_poster = map["poster_path"]),
+      (this.link_poster =
+        "https://image.tmdb.org/t/p/w500" + map["poster_path"]),
       (this.rilis = map["release_date"]),
       (this.total_suara = map["vote_count"]),
       (this.rating = map["vote_average"])

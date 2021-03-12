@@ -1,0 +1,13 @@
+h1 {
+  
+}
+
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.container-pesan {
+  width: 40%;
+  height: auto;
+  overflow: auto;
+}

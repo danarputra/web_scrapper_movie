@@ -1,8 +1,7 @@
 // Import any Model
-const MovieModel = require("./src/MovieModel");
-const GenreModel = require('./src/GenreModel'); 
+const MovieModel = require("./model/MovieModel");
+const GenreModel = require("./model/GenreModel");
 
-// Import fetching data type
 const { getData, postData } = require("./src/fetch_data");
 
 const express = require("express");
@@ -19,7 +18,7 @@ app.use(body_parser.urlencoded({ extended: false }));
 app.get("/", (req, res) => {
   res.setHeader("Content-Type", "text/html");
   console.log(__dirname);
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/views/index.html");
 });
 
 app.route("/temukan").get((req, res) => {
@@ -31,10 +30,11 @@ app.route("/temukan").get((req, res) => {
         .json({
           status: true,
           pesan: "Sukses",
-          hasil: result.data["results"].map((data) => MovieModel.jsonToModel(data)),
+          hasil: result.data["results"].map((data) =>
+            MovieModel.jsonToModel(data)
+          ),
         })
         .end();
-        
     })
     .catch((err) => {
       res
@@ -58,7 +58,9 @@ app.route("/jenis").get((req, res) => {
         .json({
           status: true,
           pesan: "Sukses",
-          hasil: result.data["genres"].map((data) => GenreModel.jsonToModel(data)),
+          hasil: result.data["genres"].map((data) =>
+            GenreModel.jsonToModel(data)
+          ),
         })
         .end();
     })

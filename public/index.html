@@ -13,19 +13,52 @@
       <h4>Jika status response 200</h4>
       <pre>
         {
-          "status": true,
-          "pesan": "Sukses",
+          "status": boolean,
+          "pesan": String,
           "hasil": Array[]
         }
       </pre>
-      <div id="jsonExample"></div>
+      <h4>Results</h4>
+      <div class="container-pesan">
+        <pre>
+          <code>
+            {
+              "status": true,
+              "pesan": "Sukses"
+              "hasil" : [
+                  {
+                    "id": 527774,
+                    "jenis_id": [16, 12, 14, 10751, 28, 18],
+                    "judul": "Raya and the Last Dragon",
+                    "deskripsi": "Dahulu kala, di dunia fantasi Kumandra, manusia dan naga hidup bersama secara harmonis. Tetapi ketika kekuatan jahat mengancam negeri itu, para naga mengorbankan diri mereka untuk menyelamatkan umat manusia. Sekarang, 500 tahun kemudian, kejahatan yang sama telah kembali dan terserah seorang pejuang tunggal, Raya, untuk melacak naga terakhir yang legendaris untuk memulihkan tanah yang retak dan orang-orangnya yang terpecah.",
+                    "popularitas": 4792.847,
+                    "link_poster": "https://image.tmdb.org/t/p/w500/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg",
+                    "rilis": "2021-03-03",
+                    "total_suara": 882,
+                    "rating": 8.6
+                  }
+                ]
+              }
+          </code>
+      </pre>
+      </div>
       <h4>Jika status response 404</h4>
       <pre>
         {
-          "status": false,
-          "pesan": "Terjadi kesalahan / data tidak ada",          
+          "status": boolean,
+          "pesan": String,          
         }
       </pre>
+      <h4>Results</h4>
+      <div class="container-pesan">
+        <pre>
+        {
+          "status": false,
+          "pesan": "Terjadi kesalahan pada sistem / data tidak ada"
+        }
+      </pre
+        >
+      </div>
     </ul>
     <h1>POST</h1>
     <h1>DELETE</h1>
